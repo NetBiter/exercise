@@ -7,6 +7,7 @@ int main()
 	std::cout<<"首先是第一名小明的成绩：\t"<<100-10;
 	std::cout<<std::endl;
 	std::cout<<"首先是第一名小豆的成绩：\t"<<(float)5/8;
+	std::cout<<"\n";
 	std::cout<<std::endl;
 	return 0;
 }
