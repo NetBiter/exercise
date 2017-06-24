@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+void main()
+{
+	int *p = new int;
+	*p = 3;
+	cout<<"将3赋给p的地址后，指针p读取的值：\t"<<*p<<endl;
+	delete p;
+	cout<<"删除p的地址后，指针p读取的值：\t\t"<<*p<<endl;
+	long *p1 = new long;
+	cout<<"long 创建新空间后，指针p1读取的地址：\t"<<p1<<endl;
+	*p1 = 999999;
+	cout<<"赋值 后p1，指针p读取的地址：\t\t"<<p<<endl;
+	*p = 23;
+	cout<<"将23赋给p的地址后，指针p读取的值：\t"<<*p<<endl;
+	cout<<"将23赋给p的地址后，指针p1读取的值：\t"<<*p1<<endl;
+	delete p1;
+
+
+}
+//有时候一个指针释放后，空间即不存在，但是创建新指针后可能会把原来释放的空间重新启动给新的指针 ，如果上一个
+//指针没有把指向的地址清零，就会指向这同一块内存，一经操作，调试起来非常难以查觉

@@ -1,0 +1,15 @@
+#include <iostream>
+int main()
+{
+	int i=2;
+number:
+	++i;
+	std::cout<<"*_";
+	if(i<10)
+	{
+		goto number;
+	}
+	std::cout<<"\n³ÌĞò½áÊø\n";
+	std::cout<<"*************\n";
+	return 0;
+}

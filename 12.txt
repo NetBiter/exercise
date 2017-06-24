@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	/*
+	enum num{zero,one=100,two,three=300,four};
+	cout<<"zero:"<<zero<<"\none:"<<one<<"\ntwo:"<<two<<"\nthree"<<three<<"\nfour"<<four<<endl;
+	*/
+	int a=1,b=2,x=8,y=0;
+	y = x = a + b;
+	cout<<y<<"\n--"<<x<<endl;
+	return 0;
+}

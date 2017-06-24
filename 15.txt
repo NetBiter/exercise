@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+class Human
+{
+public:
+	int weight;
+};
+int main()
+{
+	Human Tom;
+	Tom.weight=9;
+	cout<<"Tom的体重是："<<Tom.weight<<endl;
+	Tom.weight=102;
+	cout<<"Tom的体重是："<<Tom.weight<<endl;
+	return 0;
+}

@@ -1,0 +1,12 @@
+#include <iostream>
+int show()
+{
+	std::cout<<"hellow word!";
+	return 1;
+}
+int main()
+{
+	std::cout<<show()<<"\n";
+	std::cout<<"mainº¯Êý½áÊø£¡";
+	return 0;
+}

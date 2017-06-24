@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int i=1;
+	int *p;
+	p=&i;
+	cout<<"µØÖ·i:"<<&i<<"\n*P:"<<p<<endl;
+	return 0;
+}

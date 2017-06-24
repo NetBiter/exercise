@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a = -1;
+	unsigned b = -2;
+	short int c = -3;
+	long d = -4;
+	unsigned long e;
+	e = a + b + c + d;
+	cout<<"a:"<<a<<"\nb:"<<b<<"\nc:"<<c<<"\nd:"<<d<<"\ne:"<<e<<endl;
+	return 0;
+}

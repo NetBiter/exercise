@@ -1,0 +1,13 @@
+#include <iostream>
+int main()
+{
+	int *p = new int;
+	*p = 22;
+	std::cout<<"p的地址是："<<p<<std::endl;
+	int *a = new int;
+	std::cout<<"a的地址是："<<a<<std::endl;
+	a = p;
+	std::cout<<"a的地址是："<<a<<std::endl;
+	std::cout<<"a的值是\t："<<*a<<std::endl;
+	return 0;
+}

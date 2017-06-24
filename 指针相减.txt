@@ -1,0 +1,11 @@
+#include <iostream>
+int main()
+{
+	int *p = new int;
+	std::cout<<"p的地址是："<<p<<std::endl;
+	int *p1 = new int;
+	std::cout<<"p的地址是："<<p1<<std::endl;
+	*p = p - p1;
+	std::cout<<"两个地址相减后的地址是："<<*p<<std::endl;
+	return 0;
+}

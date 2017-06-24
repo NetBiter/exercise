@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	char choice='y';
+	while(choice=='y'||choice=='Y'){
+		cout<<"\n问君能有几多愁，恰似一江春水向东流！\n";
+		cout<<"再看一遍？是按y，否按n：";
+		cin>>choice;
+	}
+	cout<<"程序执行完毕，再见！";
+	return 0;
+}

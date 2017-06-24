@@ -1,0 +1,13 @@
+#include <iostream>
+int main()
+{
+	int *p = new int;
+	std::cout<<"指针p保存的空间地址是：\t\t"<<p<<std::endl;
+	p++;
+	std::cout<<"自加后指针p保存的空间地址是：\t"<<p<<std::endl;
+	p++;
+	std::cout<<"自减后指针p保存的空间地址是：\t"<<p<<std::endl;
+	p--;
+	std::cout<<"自减后指针p保存的空间地址是：\t"<<p<<std::endl;
+	return 0;
+}

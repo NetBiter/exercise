@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+inline int print(int);
+class A
+{
+public:
+	inline void func(int);
+	int get()
+	{
+		return x;
+	}
+private:
+	int x;
+};
+void A::func(int a)
+{
+	x=a;
+}
+int main()
+{
+	A a;
+	cout<<"请输入一个数字:";
+	int x;
+	cin>>x;
+	a.func(x);
+	//cout<<print(x)<<endl;
+	cout<<"输入的数字为："<<a.get()<<endl;
+	return 0;
+}

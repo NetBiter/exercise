@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a=99;
+	int *p=&a;
+	int *z=p;
+	cout<<"*z: "<<*z<<endl;
+	return 0;
+}

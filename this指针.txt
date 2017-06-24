@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+class A
+{
+public:
+	int get()const{return i;}
+	void set(int x){i=x;cout<<"this 变量保存的内容地址是：\t"<<this<<endl;}
+private:
+	int i;
+
+};
+int main()
+{
+	A a;
+	a.set(33);
+	cout<<"对象a的内存地址："<<&a<<endl;
+	cout<<a.get()<<endl;
+	A b;
+	b.set(99);
+	cout<<"对象b的内存地址："<<&b<<endl;
+	cout<<b.get()<<endl;
+	return 0;
+}

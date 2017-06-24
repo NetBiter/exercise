@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main()
+{	
+	const int a=2;
+
+	const int* const p = &a;
+	cout<<*p<<endl;
+	int b = 99;
+	//p = &b;
+	cout<<*p<<endl;
+
+
+	return 0;
+}

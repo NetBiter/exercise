@@ -1,0 +1,8 @@
+#include "human.h"
+int main()
+{
+	A a;
+	a.func(3,4);
+	a.print();
+	return 0;
+}

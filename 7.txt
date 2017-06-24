@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	bool check = 0;
+	if (check == true)
+	{
+		cout<<"hello word\n";
+	}else{
+		cout<<"haha\n";
+	}
+}

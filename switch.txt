@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a;
+	cout<<"请输入一个数字";
+	cin>>a;
+	switch(a)
+	{
+	case 1:cout<<"你输入的是1\n";
+		break;
+	case 2:cout<<"你输入的是2\n";
+		break;
+	case 3:cout<<"你输入的是3\n";
+		break;
+	default:cout<<"你输入的数字不是123\n";
+	}
+	return 0;
+}

@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+class Human
+{
+public:
+	int get(){return i;};
+	void set(int x){i = x;}
+private:
+	int i;
+};
+int main()
+{
+	Human Mike;
+	Human &rMike = Mike;
+	Mike.set(99);
+	cout<<rMike.get()<<endl;
+	return  0;
+}

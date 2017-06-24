@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int i;
+	cin>>i;
+	do
+	{
+		cout<<"输出第"<<i<<"个数"<<endl;
+		++i;
+	}while(i<10);
+	cout<<"程序结束！！";
+	return 0;
+}

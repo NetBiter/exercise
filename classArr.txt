@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+class A
+{
+public:
+	int a;
+	A();
+	~A();
+};
+A::A(){cout<<"构造函数在执行\n";};
+A::~A(){cout<<"析造函数在执行\n";};
+int main()
+{
+	A a[8];
+	return 0;
+}

@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+class human
+{
+public:
+	void get_stature()
+	{
+		cout<<stature;
+	}
+	void get_weight();
+	void set_stature(int x)
+	{
+		stature=x;
+	}
+	void set_weight(int x);
+private:
+	int stature;
+	int weight;
+
+};
+void human::get_weight()
+{
+	cout<<weight;
+}
+void human::set_weight(int x)
+{
+	weight = x;
+}
+void main()
+{
+	human Mike;
+	Mike.get_stature();
+	Mike.set_stature(3.8);
+	cout<<"\n";
+	Mike.get_stature();
+	cout<<"\n";
+	Mike.set_weight(99);
+	Mike.get_weight();
+	cout<<"\n";
+	//return 0;
+}

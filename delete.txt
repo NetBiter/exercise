@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int *p=new int;
+	*p=120;
+	cout<<*p<<endl;
+	//delete p;
+	*p=100;
+	cout<<*p<<endl;
+	delete p;
+	cout<<*p<<endl;
+	p=new int;
+	*p=299;
+	cout<<*p<<endl;
+	delete p;
+	return 0;
+}

@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+class Human
+{
+public:
+	Human(){cout<<"构造函数在运行!\n";i=new int(999);}
+	~Human(){cout<<"析构函数运行中！………………\n";delete i;}
+	int get()const{return *i;}
+private:
+	int *i;
+};
+int main()
+{
+	Human *Jack = new Human;
+	//对象在栈中会被系统自动释放，在堆中则只能由程序员手动释放，否则会造成内存泄露
+	//Human Jack;
+	delete Jack;
+	return 0;
+}

@@ -1,0 +1,12 @@
+#include <iostream>
+int main()
+{
+	std::cout<<"五年级一班数学成绩表\n";
+	std::cout<<"首先是第一名小红的成绩：\t"<<100;
+	std::cout<<std::endl;
+	std::cout<<"首先是第一名小明的成绩：\t"<<100-10;
+	std::cout<<std::endl;
+	std::cout<<"首先是第一名小豆的成绩：\t"<<(float)5/8;
+	std::cout<<std::endl;
+	return 0;
+}

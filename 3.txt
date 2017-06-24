@@ -1,0 +1,20 @@
+#include <iostream>
+namespace a 
+{
+	int b = 2;
+}
+namespace b
+{
+	int b = 88;
+}
+namespace c 
+{
+	int b = 22;
+}
+int main()
+{
+	using namespace a;
+	int b = 9;
+	std::cout<<b<<" "<<a::b<<" "<<b::b<<" "<<c::b<<std::endl;
+	return 0;
+}

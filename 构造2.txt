@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+class rectangle
+{
+public:
+	rectangle(int l,int w){length=l,width=w;}
+	rectangle(){cout<<"这是无参数构造函数对象"<<endl;}
+	int area(){return length*width;}
+private:
+	int length;
+	int width;
+};
+int main()
+{
+	rectangle a(9,8);
+	int x;
+	x = a.area();
+	cout<<"长方形面积是"<<x<<endl;
+	rectangle b;
+	cout<<"长方形面积是"<<b.area()<<endl;
+	return 0;
+}

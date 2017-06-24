@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+class rectangle
+{
+public:
+	rectangle(int l,int w){length=l,width=w;}
+	int area(){return length*width;}
+private:
+	int length;
+	int width;
+};
+int main()
+{
+	rectangle a(9,8);
+	int x;
+	x = a.area();
+	cout<<"长方形面积是"<<x<<endl;
+	return 0;
+}

@@ -1,0 +1,15 @@
+#include <iostream>
+int main()
+{
+	int i;
+	std::cout<<"请输入一个数字";
+	std::cin>>i;
+	while(i<=10 && i>0)
+	{
+		std::cout<<"i:"<<i<<"--"<<std::endl;
+		++i;
+	}
+	std::cout<<"\n程序结束\n";
+	std::cout<<"***********\n";
+	return 0;
+}

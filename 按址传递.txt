@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+void swap(int* a,int* b)
+{
+	int c;
+	cout<<"swap函数中，交换前，a:"<<*a<<"\tb:"<<*b<<endl;
+	c=*a;
+	*a=*b;
+	*b=c;
+	cout<<"swap函数中，交换前，a:"<<*a<<"\tb:"<<*b<<endl;
+}
+int main()
+{
+	int a = 3;
+	int b = 9;
+	cout<<"swap函数中，交换前，a:"<<a<<"\tb:"<<b<<endl;
+	swap(&a,&b);
+	cout<<"swap函数中，交换前，a:"<<a<<"\tb:"<<b<<endl;
+	return 0;
+}

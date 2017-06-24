@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+void func(int);
+void func(long);
+void func(float);
+void func(double);
+int main()
+{
+	int a=1;
+	long b = 100000;
+	float c= 1.5;
+	double d = 6.12594;
+	cout<<"a:"<<a<<endl;
+	cout<<"b:"<<b<<endl;
+	cout<<"c:"<<c<<endl;
+	cout<<"d:"<<d<<endl;
+	func(a);
+	func(b);
+	func(c);
+	func(d);
+	return 0;
+}
+void func(int a)
+{
+	cout<<"a的平方是："<<a*a<<endl;
+}
+void func(long b)
+{
+	cout<<"linga的平方是："<<b*b<<endl;
+}
+void func(float c)
+{
+	cout<<"floatc的两倍是："<<c+c<<endl;
+}
+void func(double d)
+{
+	cout<<"double d的两倍是："<<d*2<<endl;
+}
+	

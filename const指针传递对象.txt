@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+class A
+{
+public:
+	A(){cout<<"执行构造函数创建一个对象\n";}
+	A(A&){cout<<"执行复制构造函数创建该对象的副本\n";}
+	~A(){cout<<"执行析构函数删除该对象\n";}
+	void set(int i){x=i;}
+	int get()const{return x;}
+private:
+	int x;
+};
+const A*const func(const A*const one)
+{
+	one->get();
+	//one->set(99); //const保证了对象的值 不可修改
+	//++one; one所指向的地址也是常量类型
+	return one;
+}
+int main()
+{
+	A a;
+	a.set(11);
+	const A*const p = func(&a);
+	cout<<p<<"\t"<<&a<<endl; //指向常量的常指针p指向a的地址
+	cout<<p->get();
+	return 0;
+}
