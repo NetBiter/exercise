@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+class rectangle
+{
+public:
+	rectangle(){cout<<"构造一个长方形a！\n";}
+	rectangle(int x,int y){length=x;width=y;cout<<"长方形b的面积为"<<length*width<<endl;}
+	rectangle(int x,int y,int z){length=x;width=y;height=z;cout<<"长方形b的面积为"<<length*width*height<<endl;}
+	int area(){return length*width;}
+private:
+	int length;
+	int width;
+	int height;
+};
+int main()
+{
+	rectangle a;
+	rectangle b(2,3);
+	cout<<"b的面积是"<<b.area()<<endl;
+	rectangle c(2,2,2);
+	cout<<"c的面积是"<<c.area()<<endl;
+	return 0;
+}
