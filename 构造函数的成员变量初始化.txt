@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+class rectangle
+{
+public:
+	rectangle():length(8),width(8){cout<<"构造一个长方形a！\n";}
+	//rectangle(){length=3;width=4;}
+	int area(){return length*width;}
+private:
+	const int length;
+	int width;
+	int height;
+};
+int main()
+{
+	rectangle a;
+	cout<<"a的面积是："<<a.area()<<endl;
+	return 0;
+}
