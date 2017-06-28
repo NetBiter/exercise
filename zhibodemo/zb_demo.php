@@ -39,7 +39,7 @@ echo $pushurl.'<br>';
 打印三种直播协议播放地址，123123555即鉴权后的播放地址
 */
 echo "打印三种直播地址<br/>";
-echo "$rtmpurl<br>";
+echo $rtmpurl.'<br>';
 echo $flvurl.'<br>';
 echo $m3u8url.'<br>';
 
